@@ -737,7 +737,7 @@ function renderTable(data) {
     // Destroy old charts if they exist
     destroyCharts();
 }
-}
+
 
 // ============================================
 // Format Number
