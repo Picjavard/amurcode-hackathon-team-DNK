@@ -69,9 +69,12 @@
                         </button>
                     </div>
                     <div class="search-hints">
-                        <span class="hint">📊 "План vs Касса"</span>
-                        <span class="hint">📅 "Сравнить 2024 и 2025"</span>
-                        <span class="hint">🏗️ "Объекты по дорожному хозяйству"</span>
+                        <span class="hint" data-query="plan-kassa">📊 "План vs Касса"</span>
+                        <span class="hint" data-query="compare-periods">📅 "Сравнить 2024 и 2025"</span>
+                        <span class="hint" data-query="road-economy">🏗️ "Объекты по дорожному хозяйству"</span>
+                        <span class="hint" data-query="education">🎓 "Расходы на образование"</span>
+                        <span class="hint" data-query="goszakaz">💼 "Госзаказ: контракты и платежи"</span>
+                        <span class="hint" data-query="buau">📋 "БУАУ: исполнение субсидий"</span>
                     </div>
                 </div>
             </div>
@@ -310,10 +313,14 @@
 
             <!-- Table View -->
             <div class="table-view" id="tableView">
+                <div class="table-info-bar">
+                    <span class="info-badge" id="dataSourceBadge">Источник: АЦК-Планирование + АЦК-Финансы</span>
+                    <span class="info-count" id="recordsCount">Записей: 0</span>
+                </div>
                 <div class="table-container">
                     <table class="data-table">
                         <thead>
-                            <tr>
+                            <tr id="tableHeader">
                                 <th>КЦСР</th>
                                 <th>Наименование объекта</th>
                                 <th>План (руб.)</th>
